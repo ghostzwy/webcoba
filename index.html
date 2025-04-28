@@ -1,0 +1,71 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Eco Platform Game</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <!-- Preload game assets -->
+        <div style="position: absolute; width: 0; height: 0; overflow: hidden;">
+            <!-- Image Assets -->
+            <img id="background" src="./assets/sprites/background_forest.png" alt="background">
+            <img id="player" src="./assets/sprites/hero_green.png" alt="player">
+            <img id="platform" src="./assets/sprites/ground_grass.png" alt="platform">
+            <img id="obstacle" src="./assets/sprites/obstacle.png" alt="obstacle">
+            <img id="trash" src="./assets/sprites/trash_can.png" alt="trash">
+            
+            <!-- Audio Assets -->
+            <audio id="jumpSound" src="https://example.com/jump.mp3"></audio>
+        </div>
+        
+
+        <!-- Game Start Screen -->
+        <div id="startScreen" class="screen">
+            <h1>Eco Platform Game</h1>
+            <button id="startButton">Start Game</button>
+        </div>
+
+        <!-- Game Interface -->
+        <div id="gameInterface">
+            <div id="score">Score: 0</div>
+            <div id="timer">Time: 0s</div>
+            <canvas id="gameCanvas" width="800" height="400"></canvas>
+            
+            <div class="game-controls">
+                <p>Controls:</p>
+                <p>Left Arrow: Move left | Right Arrow: Move right | Spacebar: Jump</p>
+                <p>Collect trash items to earn points. Avoid obstacles!</p>
+            </div>
+        </div>
+
+        <!-- Game Over Screen -->
+    <!-- Game Over Screen (Tengah Layar) -->
+    <div id="gameOverScreen" class="screen" style="
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999;
+    ">
+    <!-- Inside your index.html, before the closing body tag -->
+<div id="gameOverScreen" class="screen">
+    <h2>GAME OVER!</h2>
+    <p id="finalScore">Final Score: 0</p>
+    <button id="restartButton">Play Again</button>
+</div>
+
+<canvas id="gameCanvas" width="800" height="300"></canvas>
+
+
+
+        <!-- Single combined JavaScript file -->
+        <script src="js/main.js"></script> 
+    </body>
+    </html>
