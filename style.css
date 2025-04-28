@@ -1,0 +1,159 @@
+*{
+    color: white;
+    margin: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #121212	;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+        background-color: darkslategray;
+        height: 50px;   
+    position: sticky;
+    top: 0;    
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+list-style: none;
+
+
+}
+li{
+    font-size: 20px;
+    margin-left: 200px;
+    display: inline-block;
+    margin-right: 20px;
+    color: white;
+
+    border-radius: 5px;
+    border-width: 2px;
+
+}
+li:hover{
+    background-color: #1e1e1e;
+    transition: 0.3s;
+    
+}
+
+h4{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+img{
+
+    width:100%;
+    height: 200px;
+}
+.kecantikan{
+    display: flex;
+    justify-content: space-between;
+   margin: 10px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.kecantikan1{
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    height: 300px;
+    
+}
+
+.elektronik{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.elektronik1{
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    height: 300px;
+}
+.gaya{
+    display: flex;
+  margin-top: 20px;
+   justify-content: space-between;
+   margin-bottom: 50px;
+}
+.gaya1{
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    height: 300px;
+}
+
+.sehari{
+    display: flex;
+   justify-content: space-between;
+   margin-top:50px;
+}
+.sehari1{
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+    height: 300px;
+}
+
+.kecantikan1:hover,
+.elektronik1:hover,
+.gaya1:hover,
+.sehari1:hover {
+    transform: scale(1.05) rotateZ(1deg);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 10 20px 25px rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+ 
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        background: darkslategray;
+        padding: 10px 20px;
+        border-radius: 10px;
+    }
+    
+    ul {
+        display: flex;
+        flex-wrap: nowrap;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        overflow-x: auto; 
+    }
+    
+    li {
+        margin: 0 15px;
+        font-size: 14px;
+        white-space: nowrap; 
+    }
+    .kecantikan, .elektronik, .gaya, .sehari {
+        flex-direction: column;
+        align-items: center;
+    }
+    .kecantikan1, .elektronik1, .gaya1, .sehari1 {
+        width: 90%;
+    }
+    img{
+        width: 50%;
+        position: relative;
+        left:100px ;
+        top: 20px;
+    }
+}
